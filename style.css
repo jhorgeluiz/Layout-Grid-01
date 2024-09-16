@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background-color: #e7e2e2;
+    }
+    #container {
+        background-color: #a19d9d;
+        display: grid;
+        grid-template-areas: 
+        'header header'
+        'nav nav'
+        'aside aside'
+        'section section'
+        'article1 article1'
+        'article2 article2'
+        'article3 article3'
+        'article4 article4'
+        'footer footer';
+        gap: 2px;
+
+    }
+
+    header {
+        grid-area: header;
+        background-color: blueviolet;
+        height: 100px;
+
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #7de22b;
+        width: 100%;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+    aside {
+        grid-area: aside;
+        background-color: #7de22b;
+        height: 100px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+        margin: 5px;
+    }
+
+    .article1 {
+        grid-area: article1;
+        background-color: #e2932b;
+        height: 200px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+        margin: 5px;
+    }
+    .article2 {
+        grid-area: article2;
+        background-color: #e2932b;
+        height: 200px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+        margin: 5px;
+    }
+    .article3 {
+        grid-area: article3;
+        background-color: #e2932b;
+        height: 200px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+        margin: 5px;
+    }
+    .article4 {
+        grid-area: article4;
+        background-color: #e2932b;
+        height: 200px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+        margin: 5px;
+    }
+
+    section {
+        grid-area: section;
+        background-color: #2b89e2;
+        height: 200px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    footer {
+        grid-area: footer;
+        margin-top: auto;
+        text-align: center;
+        background-color: #e22b2b;
+        height: 50px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+}
+
+/* ===========tela media=========== */
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-color: #e7e2e2;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    #container {
+
+        display: grid;
+        grid-template-areas: 
+        'header header header header'
+        'nav nav nav nav'
+        'aside section article1 article1'
+        'aside section article2 article2'
+        'aside section article3 article3'
+        'aside section article4 article4'
+        'footer footer footer footer';
+        gap: 5px;
+    }
+
+    header {
+        grid-area: header;
+        background-color: blueviolet;
+        height: 200px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #7de22b;
+        height: 80px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+    aside {
+        grid-area: aside;
+        background-color: #7de22b;
+        height: 423px;
+        width: 150px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    .article1 {
+        grid-area: article1;
+        background-color: #e2932b;
+        height: 100px;
+        width: 350px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+    .article2 {
+        grid-area: article2;
+        background-color: #e2932b;
+        height: 100px;
+        width: 350px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+    .article3 {
+        grid-area: article3;
+        background-color: #e2932b;
+        height: 100px;
+        width: 350px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+    .article4 {
+        grid-area: article4;
+        background-color: #e2932b;
+        height: 100px;
+        width: 350px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    section {
+        grid-area: section;
+        background-color: #2b89e2;
+        height: 423px;
+        width: 300px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #e22b2b;
+        height: 100px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+        margin-top: auto;
+    }
+}
+
+/* ====================CAPA TELA GRANDE==================== */
+
+@media screen and (min-width: 850px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-color: #e7e2e2;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    #container {
+        display: grid;
+        grid-template-areas: 
+        'nav header header aside'
+        'nav article1 article3 section'
+        'nav article2 article4 section'
+        'footer footer footer footer';
+        gap: 5px;
+    }
+
+    header {
+        grid-area: header;
+        background-color: blueviolet;
+        height: 200px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #7de22b;
+        height: 742px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+    aside {
+        grid-area: aside;
+        background-color: #7de22b;
+        height: 200px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    .article1 {
+        grid-area: article1;
+        background-color: #e2932b;
+        height: 263px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+    .article2 {
+        grid-area: article2;
+        background-color: #e2932b;
+        height: 263px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+    .article3 {
+        grid-area: article3;
+        background-color: #e2932b;
+        height: 263px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+    .article4 {
+        grid-area: article4;
+        background-color: #e2932b;
+        height: 263px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    section {
+        grid-area: section;
+        background-color: #2b89e2;
+        height: 534px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #e22b2b;
+        height: 100px;
+        border: 1px solid;
+        display: grid;
+        place-items: center;
+        margin-top: auto;
+    }
+}
