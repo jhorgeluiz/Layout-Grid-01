@@ -221,7 +221,7 @@
 
     footer {
         grid-area: footer;
-        background-color: #e22b2b;
+        background-color: #201f1f;
         height: 100px;
         border: 1px solid;
         display: grid;
